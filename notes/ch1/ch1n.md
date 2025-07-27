@@ -201,16 +201,18 @@ $\alpha = \Delta U_\mathrm Z / \Delta T$
 
 ## 1.3 晶体三极管
 
+### 1.3.1 结构与类型
+
 双极晶体管(Biopolar Junction Transistor, BJT)，三极管
 
-- 发射级e，ejection
-- 基极b，basic
-- 集电极c，collect
+- 发射级e，Emitter
+- 基极b，Base
+- 集电极c，Collector
 
 特点：
 - 发射区发射载流子、掺杂浓度高
 - 集电区收集载流子、掺杂浓度低、面积大
-- 基区薄
+- 基区薄，扩散、复合、产生
 
 两个结
 
@@ -222,24 +224,30 @@ $\alpha = \Delta U_\mathrm Z / \Delta T$
 NPN，P→N指向外侧
 PNP，N←P指向内侧
 
-#### 放大作用
-
+### 1.3.2 放大作用
 
 #### 基本共射放大电路
 
 三极管的正偏：发射结正偏
 
-
 #### 晶体管内部载流子的运动
 
-$I_\mathrm{EN}$，发射区向基区扩散的电子电流
-$I_\mathrm{EP}$，基区向发射区扩散的空穴电流
-$I_\mathrm{BN}$，基区内复合形成的电流
-$I_\mathrm{CN}$，基区内非平衡少子向收集区扩散的电子电流
-$I_\mathrm{CBO}$，基区与集电区平衡少子的漂移电流（收集结的反向最大电流）
+$I_\mathrm E$下的电流：
+- $I_\mathrm{EN}$，发射区向基区扩散的电子电流（Emitter-Negative）
+- $I_\mathrm{EP}$，基区向发射区扩散的空穴电流（Emitter-Positive）
+
+$I_\mathrm B$下的电流：
+- $I_\mathrm{BN}$，基区内电子复合形成的电流（Base-Negative）
+
+$I_\mathrm C$下的电流：
+- $I_\mathrm{CN}$，基区内非平衡少子向收集区扩散的电子电流（Collector-Negative）
+- $I_\mathrm{CBO}$，（发射极开路时）基区与集电区平衡少子的漂移电流（集电结的反向饱和电流）（Collector-Base-Open）
+- $I_\mathrm{CEO}$，基极开路（$I_\mathrm B = 0$）时，由$V_\mathrm{CC}$驱动的、ce极间的电流（Collector-Emitter-Open）
+
+对于一个三极管，$I_\mathrm{CBO}$和$I_\mathrm{CEO}$在一定的温度范围内视为不变
+发射极开路$I_\mathrm{CBO}$定义了“集电结本身有多漏”，而基极开路$I_\mathrm{CEO}$定义了“整个晶体管在截止时有多漏”。
 
 
-基区：扩散、复合、产生
 
 ![BJT 内部载流子运动与外部电流](fig/BJT.png "BJT 内部载流子运动与外部电流")
 
@@ -270,10 +278,6 @@ $$\overline \beta
 
 $$\beta = \Delta i_\mathrm C / \Delta i_\mathrm B$$
 
-3. 穿透电流$I_\mathrm{CEO}$：基极开路时（$I_\mathrm B = 0$时），由$V_\mathrm{CC}$驱动的、ce极间的电流
-
-4. 反向电流$I_\mathrm{CBO}$：（发射极开路时）集电结的反向饱和电流
-
 
 处理如下：
 
@@ -292,6 +296,7 @@ I_\mathrm C
 这表明当基极开路时，集电区和发射区之间的总电流$I_\mathrm{CEO}$不仅包括集电结的反向饱和电流$I_\mathrm{CBO}$，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与$\overline \beta$成正比。
 
 
+
 交流前提下：
 $$\begin{aligned}
 i_{\mathrm{C}}
@@ -301,7 +306,9 @@ i_{\mathrm{C}}
 \end{aligned}
 $$
 
-5. 共基直流放大系数
+#### 共基放大系数
+
+1. 共基直流放大系数
 
 $$\overline \alpha 
 = \frac{I_\mathrm{CN}}{I_\mathrm E}
@@ -315,8 +322,66 @@ $$
 
 由总电流关系，整理得：
 $$\overline \alpha = \frac{\overline \beta}{1 + \overline \beta}$$
+
 6. 共基交流放大系数
 
-$$\alpha $$
+同样根据总电流的关系：
+$$\alpha = \Delta i_\mathrm C/ \Delta i_\mathrm E = \frac{\beta}{1 + \beta}$$
 
 
+通常$\beta \ll 1,~ \alpha \approx 1;~ \overline \beta = \beta,~ \overline \alpha = \alpha$
+
+
+
+### 1.3.3 晶体管的共射特性曲线
+
+共射：共用发射极
+
+#### 输入特性
+
+### 1.3.4 晶体管的主要参数
+
+
+#### 直流参数
+
+#### 交流参数
+
+#### 极限参数
+
+### 1.3.5 温度对晶体管参数的影响
+
+### 1.3.6 光电三极管
+
+
+
+## 1.4 场效应管
+
+Field Effect Transistor, FET
+场：电场→用于控制的电流小，只有多子导电，受温度影响小
+
+### 1.4.1 结型场效应管
+
+### 1.4.2 绝缘栅型场效应管
+
+Insulated Gate FET, IGFET
+
+(金属氧化物半导体)场效应晶体管，(MOS)FET
+
+
+#### N沟道增强型MOS管
+
+1. 结构与符号
+   - 栅极g，gate
+   - 源极s，source
+   - 漏极d，
+2. 工作原理
+   1. 当$u_\mathrm{GS} > U_\mathrm{GS(th)}$时，沟道开始形成，然后对ds加$u_\mathrm{DS}$
+   2. **可变电阻区**：可变电阻区导通后的一定$u_\mathrm{DS}$内，对于不变的$u_\mathrm{GS}$，$i_\mathrm{DS} \propto u_\mathrm{DS}$
+   3. 随着$u_\mathrm{DS}$不断增大，漏极d处电压为$u_\mathrm{GS} - u_\mathrm{DS}$，d侧通道口变窄
+   4. **恒流区**：预夹断，此时增加的电压与增大的电阻平衡，$i_\mathrm D$大小取决于$u_\mathrm{GS}$
+
+总结：通过$u_\mathrm{GS}$控制导电的N型沟道的宽窄，即用$u_\mathrm{GS}$控制$R_\mathrm{GS}$
+
+#### N沟道耗尽型MOS管
+
+通过在栅极绝缘层封入电荷，提前生成电场，加反向电压$u_\mathrm{GS} < U_\mathrm{GS(off)}$可使通道关闭
