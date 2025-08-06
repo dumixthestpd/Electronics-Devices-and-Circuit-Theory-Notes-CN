@@ -11,7 +11,9 @@ flowchart LR
 ```
 
 动态平衡
+
 温度
+
 载流子浓度
 
 $$n_i = p_i = K_i T^ \frac 3 2 \mathrm e ^ \frac{-E_{CO}}{2kT}$$
@@ -293,35 +295,34 @@ $$\overline \beta
 
 2. **共射交流放大系数**：
 
-   $$\beta = \Delta i_\mathrm C / \Delta i_\mathrm B$$
+$$\beta = \Delta i_\mathrm C / \Delta i_\mathrm B$$
 
 
-   处理如下：
+处理如下：
+
+$$\begin{aligned}
+I_\mathrm C 
+&= \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO}
+& \text{（对$\overline \beta$表达式化简）}\\
+&= \overline \beta I_\mathrm B + I_\mathrm{CEO} 
+& \text{（令$I_\mathrm B = 0$，根据$I_\mathrm{CEO}$的定义得到）}\\
+&\approx \overline \beta I_\mathrm B
+& \text{（$\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$时）}\\
+& \Longrightarrow I_\mathrm{CEO} = (1 + \overline \beta) I_\mathrm{CBO}
+\end{aligned}$$
+
+这表明当基极开路时，集电区和发射区之间的总电流 $I_\mathrm{CEO}$ 不仅包括集电结的反向饱和电流 $I_\mathrm{CBO}$ ，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与$\overline \beta$成正比。
 
 
-   $$\begin{aligned}
-   I_\mathrm C 
-   &= \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO}
-   & \text{（对$\overline \beta$表达式化简）}\\
-   &= \overline \beta I_\mathrm B + I_\mathrm{CEO} 
-   & \text{（令$I_\mathrm B = 0$，根据$I_\mathrm{CEO}$的定义得到）}\\
-   &\approx \overline \beta I_\mathrm B
-   & \text{（$\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$时）}\\
-   & \Longrightarrow I_\mathrm{CEO} = (1 + \overline \beta) I_\mathrm{CBO}
-   \end{aligned}$$
+交流前提下：
 
-   这表明当基极开路时，集电区和发射区之间的总电流 $I_\mathrm{CEO}$ 不仅包括集电结的反向饱和电流 $I_\mathrm{CBO}$ ，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与$\overline \beta$成正比。
-
-
-   交流前提下：
-
-   $$\begin{aligned}
-   i_{\mathrm{C}}
-   &= I_{\mathrm{c}} + \Delta i_{\mathrm{C}} \\
-   &= \bar{\beta} I_{\mathrm{B}} + I_{\mathrm{CEO}} + \beta \Delta i_{\mathrm{B}} \\
-   &\approx \bar{I}_{\mathrm{B}}+\beta \Delta i_{\mathrm{B}}
-   \end{aligned}
-   $$
+$$\begin{aligned}
+i_{\mathrm{C}}
+&= I_{\mathrm{c}} + \Delta i_{\mathrm{C}} \\
+&= \bar{\beta} I_{\mathrm{B}} + I_{\mathrm{CEO}} + \beta \Delta i_{\mathrm{B}} \\
+&\approx \bar{I}_{\mathrm{B}}+\beta \Delta i_{\mathrm{B}}
+\end{aligned}
+$$
 
 #### 共基放大系数
 
@@ -329,26 +330,26 @@ $$\overline \beta
 
 1. **共基直流放大系数**
 
-   $$\overline \alpha 
-   = \frac{I_\mathrm{CN}}{I_\mathrm E}
-   \approx \frac{I_\mathrm C}{I_\mathrm E} $$
+$$\overline \alpha 
+= \frac{I_\mathrm{CN}}{I_\mathrm E}
+\approx \frac{I_\mathrm C}{I_\mathrm E} $$
 
-   对精确值展开：
+对精确值展开：
 
-   $$I_\mathrm C = \overline \alpha I_\mathrm E + I_\mathrm{CBO}$$
+$$I_\mathrm C = \overline \alpha I_\mathrm E + I_\mathrm{CBO}$$
 
-   由总电流关系，整理得：
+由总电流关系，整理得：
 
-   $$\overline \alpha = \frac{\overline \beta}{1 + \overline \beta}$$
+$$\overline \alpha = \frac{\overline \beta}{1 + \overline \beta}$$
 
 2. **共基交流放大系数**
 
-   同样根据总电流的关系：
+同样根据总电流的关系：
 
-   $$\alpha = \Delta i_\mathrm C/ \Delta i_\mathrm E = \frac{\beta}{1 + \beta}$$
+$$\alpha = \Delta i_\mathrm C/ \Delta i_\mathrm E = \frac{\beta}{1 + \beta}$$
 
 
-   通常 $\beta \ll 1,~ \alpha \approx 1;~ \overline \beta = \beta,~ \overline \alpha = \alpha$
+通常 $\beta \ll 1,~ \alpha \approx 1;~ \overline \beta = \beta,~ \overline \alpha = \alpha$
 
 
 
@@ -366,31 +367,48 @@ $$\overline \beta
 
 #### 直流参数
 
-1. 共射直流放大系数 
+1. 共射直流放大系数
+ 
    $\overline \beta = \frac{I_\mathrm C - I_\mathrm{CBO}}{I_\mathrm B + I_\mathrm{CBO}} = \frac{I_\mathrm C - I_\mathrm{CEO}}{I_\mathrm B} \approx \frac{I_\mathrm C}{I_\mathrm B}$
+
 2. 共基直流电流放大系数 
+
    $\overline \alpha = \frac{I_\mathrm{CN}}{I_\mathrm E} = \frac{\overline \beta}{1+\overline \beta} \approx \frac{I_\mathrm C}{I_\mathrm E}$
+
 3. 极间反向电流 
+
    $I_\mathrm{CBO},~ I_\mathrm{CEO}=(1+\overline\beta)I_\mathrm{CBO}$
 
 #### 交流参数
 
 1. 共射交流放大系数 
+
    $\beta = \left.\frac{\Delta i_{C}}{\Delta i_{B}}\right|_{U_\mathrm{CE}=\mathrm{const.}} \approx \overline \beta$
+
 2. 共基交流放大系数
+
    $\alpha = \left.\frac{\Delta i_{C}}{\Delta i_{E}}\right|_{U_\mathrm{CB}=\mathrm{const.}} \approx \overline \alpha$
+
 3. 特征频率
+
    频率过高使得 $I_\mathrm C / I_\mathrm B \downarrow$ 并发生相移， $f_\mathrm T$ 时 $\beta \to 1^+$
 
 #### 极限参数
 
 1. 最大集电极耗散功率 $P_\mathrm{CM}$
+
    即受散热影响的功率上限
+
 2. 最大集电极电流 $I_\mathrm{CM}$
+
    即无法无限放大，且受到功率限制
+
 3. 极间反向击穿电压 $U_\mathrm{(BR)XYO}$
+
    即当Z开路时，XY间能承受的最大反向电压
+
    $U_\mathrm{(BR)CBO}, U_\mathrm{(BR)CEO}$ 对应集电结所允许加的最高反向电压。
+
    $U_\mathrm{(BR)EBO}$ 对应发射结所允许加的最高反向电压。
 
 ### 1.3.5 温度对晶体管参数的影响*
@@ -406,11 +424,13 @@ $$\overline \beta
 ## 1.4 场效应管
 
 Field Effect Transistor, FET
+
 场：电场→用于控制的电流小，只有多子导电，受温度影响小
 
 ### 1.4.1 结型场效应管
 
 Junction FET, JFET
+
 ![JFET_N](fig/JFET.png "N型JFET")
 
 类似于耗尽型MOSFET，区别则是JFET只能加反向电压保证耗尽层的存在，不允许PN结正向导通。
@@ -464,21 +484,33 @@ depletion type
 #### 直流参数
 
 1. 开启电压 $ U_\mathrm{GS(th)} $
+
    适用于enhancement type MOSFET
+
+
 2. 夹断电压 $ U_\mathrm{GS(off)} $
+
    适用于JFET / depletion type MOSFET
+
+
 3. 饱和漏极电流 $ I_\mathrm{DSS} $
+
    JFET 在 $u_\mathrm{GS} = 0 \mathrm V$ 时预夹断的电流
+
 4. 直流输入电阻 $ R_\mathrm{GS(DC)} $
+
    $R_\mathrm{GS(DC)} = u_\mathrm{GS} / i_\mathrm G$
    $R_\mathrm{GS(DC), MOSFET} > 10^9 \Omega$， $R_\mathrm{GS(DC), JFET} > 10^7 \Omega$
 
 #### 交流参数
 
 1. 低频跨导
+
    $g_\mathrm m = \frac{\Delta i_\mathrm D}{\Delta u_\mathrm{GS}} |_{u_\mathrm{DS} = \mathrm{const.}}$ 单位取 $\mathrm S$，西门子。
+
 2. 极间电容
-   最高工作频率 $f_\mathrm M$ 综合考虑了$C_\mathrm{gs},~ C_\mathrm{gd},~ C_\mathrm{ds}$ 三个极间电容。
+
+   最高工作频率 $f_\mathrm M$ 综合考虑了 $C_\mathrm{gs},~ C_\mathrm{gd},~ C_\mathrm{ds}$ 三个极间电容。
 
 #### 极限参数
 
