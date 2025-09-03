@@ -62,9 +62,8 @@ pass
 ### 1.3.1 为使NPN/PNP型管工作在放大状态，应分别在外部加什么样的电压？
 
 工作在放大状态，要求发射结正偏，集电结反偏。
-对于NPN型管，即要求 $ u_\mathrm{eb} = u_\mathrm e - u_\mathrm b > 0,~ 
-u_\mathrm{bc} = u_\mathrm b - u_\mathrm c < 0 $ 
-对于PNP型管，即要求 $ u_\mathrm{eb} < 0,~ u_\mathrm{bc} > 0 $
+对于NPN型管，即要求 $u_\mathrm{eb} = u_\mathrm e - u_\mathrm b > 0,~ u_\mathrm{bc} = u_\mathrm b - u_\mathrm c < 0$ 
+对于PNP型管，即要求 $u_\mathrm{eb} < 0,~ u_\mathrm{bc} > 0$
 
 ### 1.3.2 在实验中应用什么方法判断晶体管的工作状态？
 

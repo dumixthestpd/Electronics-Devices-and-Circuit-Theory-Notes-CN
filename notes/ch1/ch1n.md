@@ -88,7 +88,7 @@ $$ i = I_s(\mathrm e^{\frac{u}{U_T}} - 1)$$
 
 反向特性：
 
-- $u \ll U_T,~ i \approx -I_s $
+- $u \ll U_T,~ i \approx -I_s$
 - 反向击穿：共价键的破坏、电子-空穴对的大量产生
   - **雪崩击穿**：少子的漂移运动撞出价电子。掺杂浓度低，PN结宽
   - **齐纳击穿**：大场强直接破坏。掺杂浓度高，PN节窄
@@ -156,7 +156,7 @@ $X_C = \frac 1 {2\pi f C}$， $f\uparrow X_C\downarrow$， $C\uparrow X_C \downa
 3. **反向电流** $I_R$
    关系单向导电性
 4. **最高工作频率** $f_\mathrm M$
-   在最高工作频率以上，二极管单项导电性差
+   在最高工作频率以上，二极管单向导电性差
 
 ### 1.2.4 二极管的等效电路
 
@@ -289,6 +289,8 @@ $$ I_{\mathrm{E}}=I_{\mathrm{C}} + I_{\mathrm{B}} $$
 1. **共射直流放大系数**：
    发射区发射的载流子中，能够被集电区有效收集的载流子数目与在基区复合导致基极电流产生的载流子数目之比
 
+   当基极开路时，集电区和发射区之间的总电流 $I_\mathrm{CEO}$ 不仅包括集电结的反向饱和电流 $I_\mathrm{CBO}$ ，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与$\overline \beta$成正比。
+
 $$\overline \beta 
 = \frac {I_\mathrm{CN}} {I_\mathrm B ^\prime}
 = \frac{I_\mathrm C - I_\mathrm{CBO}}{I_\mathrm B + I_\mathrm{CBO}}$$
@@ -298,20 +300,7 @@ $$\overline \beta
 $$\beta = \Delta i_\mathrm C / \Delta i_\mathrm B$$
 
 
-处理如下：
 
-$$\begin{aligned}
-I_\mathrm C 
-&= \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO}
-& \text{（对$\overline \beta$表达式化简）}\\
-&= \overline \beta I_\mathrm B + I_\mathrm{CEO} 
-& \text{（令$I_\mathrm B = 0$，根据$I_\mathrm{CEO}$的定义得到）}\\
-&\approx \overline \beta I_\mathrm B
-& \text{（$\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$时）}\\
-& \Longrightarrow I_\mathrm{CEO} = (1 + \overline \beta) I_\mathrm{CBO}
-\end{aligned}$$
-
-这表明当基极开路时，集电区和发射区之间的总电流 $I_\mathrm{CEO}$ 不仅包括集电结的反向饱和电流 $I_\mathrm{CBO}$ ，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与$\overline \beta$成正比。
 
 
 交流前提下：
@@ -321,8 +310,7 @@ i_{\mathrm{C}}
 &= I_{\mathrm{c}} + \Delta i_{\mathrm{C}} \\
 &= \bar{\beta} I_{\mathrm{B}} + I_{\mathrm{CEO}} + \beta \Delta i_{\mathrm{B}} \\
 &\approx \bar{I}_{\mathrm{B}}+\beta \Delta i_{\mathrm{B}}
-\end{aligned}
-$$
+\end{aligned}$$
 
 #### 共基放大系数
 
@@ -483,21 +471,21 @@ depletion type
 
 #### 直流参数
 
-1. 开启电压 $ U_\mathrm{GS(th)} $
+1. 开启电压 $U_\mathrm{GS(th)}$
 
    适用于enhancement type MOSFET
 
 
-2. 夹断电压 $ U_\mathrm{GS(off)} $
+2. 夹断电压 $U_\mathrm{GS(off)}$
 
    适用于JFET / depletion type MOSFET
 
 
-3. 饱和漏极电流 $ I_\mathrm{DSS} $
+3. 饱和漏极电流 $I_\mathrm{DSS}$
 
    JFET 在 $u_\mathrm{GS} = 0 \mathrm V$ 时预夹断的电流
 
-4. 直流输入电阻 $ R_\mathrm{GS(DC)} $
+4. 直流输入电阻 $R_\mathrm{GS(DC)}$
 
    $R_\mathrm{GS(DC)} = u_\mathrm{GS} / i_\mathrm G$
    $R_\mathrm{GS(DC), MOSFET} > 10^9 \Omega$， $R_\mathrm{GS(DC), JFET} > 10^7 \Omega$
@@ -506,7 +494,7 @@ depletion type
 
 1. 低频跨导
 
-   $g_\mathrm m = \frac{\Delta i_\mathrm D}{\Delta u_\mathrm{GS}} |_{u_\mathrm{DS} = \mathrm{const.}}$ 单位取 $\mathrm S$，西门子。
+   $g_\mathrm m = \frac{\Delta i_\mathrm D}{\Delta u_\mathrm{GS}} |_{u_\mathrm{DS} = \mathrm{const.}}$ 单位取 $\mathrm S$ ，西门子。
 
 2. 极间电容
 
@@ -522,3 +510,47 @@ depletion type
 
 ### 1.4.4 场效应管与晶体管的比较*
 
+
+
+
+
+
+
+# 推导过程
+
+
+## 共射放大系数、三极管 $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的关系
+<a id="amplification"></a>
+
+### $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的关系
+
+对$\overline \beta$表达式化简，可以得到：
+
+$$I_\mathrm C = \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO} \tag{1}$$
+
+根据 $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的定义，基极开路， $I_\mathrm B = 0$ ：
+
+$$I_\mathrm C = \overline \beta I_\mathrm B + I_\mathrm{CEO} \tag{2}$$
+
+在 $\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$ 时，可以得到结论：
+
+从（1）式到（2）式的过程中可以看出：
+
+$$I_\mathrm{CEO} = (1 + \overline \beta) I_\mathrm{CBO} \tag{3}$$
+
+### 共射直流/交流放大系数
+
+通过直接近似（ $\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$ 时）：
+
+$$I_\mathrm C \approx \overline \beta I_\mathrm B$$
+
+交流前提下：
+
+$$\begin{aligned}
+i_{\mathrm{C}}
+&= I_{\mathrm{c}} + \Delta i_{\mathrm{C}} \\
+&= \underbrace{\overline{\beta} I_{\mathrm{B}} + I_{\mathrm{CEO}}}_\text{直流分量} + \underbrace{\beta \Delta i_{\mathrm{B}}}_\text{交流分量} \\
+&\approx \overline{I}_{\mathrm{B}} + \beta \Delta i_{\mathrm{B}}
+\end{aligned}$$
+
+对于工艺良好的二极管 $\beta \approx \overline{\beta}$ ，合适的条件下，这个大小可以控制在5%以内。这取决于掺杂的均匀程度、基区宽度的均匀程度。 $\overline{\beta}$ 还会有一定的温度漂移。*

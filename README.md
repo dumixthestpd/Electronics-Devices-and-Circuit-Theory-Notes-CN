@@ -12,16 +12,16 @@
 ```
 
 mat
-    教材和习题解答的pdf
+    习题解答的pdf，教材由于大小原因无法上传
 
 notes
     ch1
+        ch1n - 笔记
+        ch1q - 思考题解答（自己写的+AI修正组织的）
+    ch2
     ...
     ch10
 
-notes.md
-
-Questions.md
 
 README.md
 
