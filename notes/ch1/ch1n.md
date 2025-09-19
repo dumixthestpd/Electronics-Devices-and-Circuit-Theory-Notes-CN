@@ -526,17 +526,22 @@ depletion type
 
 对$\overline \beta$表达式化简，可以得到：
 
-$$I_\mathrm C = \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO} \tag{1}$$
+
+```math
+I_\mathrm C = \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO} \tag{1}
+```
 
 根据 $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的定义，基极开路， $I_\mathrm B = 0$ ：
 
-$$I_\mathrm C = \overline \beta I_\mathrm B + I_\mathrm{CEO} \tag{2}$$
+```math
+I_\mathrm C = \overline \beta I_\mathrm B + I_\mathrm{CEO} \tag{2}
+```
 
 在 $\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$ 时，可以得到结论：
 
 从（1）式到（2）式的过程中可以看出：
 
-$$I_\mathrm{CEO} = (1 + \overline \beta) I_\mathrm{CBO} \tag{3}$$
+$$I_\mathrm{CEO} = (1 + \overline \beta) I_\mathrm{CBO}$$
 
 ### 共射直流/交流放大系数
 
