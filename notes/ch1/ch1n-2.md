@@ -85,7 +85,7 @@ $$ I_{\mathrm{E}}=I_{\mathrm{C}} + I_{\mathrm{B}} $$
 1. **共射直流放大系数**：
    发射区发射的载流子中，能够被集电区有效收集的载流子数目与在基区复合导致基极电流产生的载流子数目之比
 
-   当基极开路时，集电区和发射区之间的总电流 $I_\mathrm{CEO}$ 不仅包括集电结的反向饱和电流 $I_\mathrm{CBO}$ ，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与$\overline \beta$成正比。
+   当基极开路时，集电区和发射区之间的总电流 $I_\mathrm{CEO}$ 不仅包括集电结的反向饱和电流 $I_\mathrm{CBO}$ ，还包括由于基区少数载流子的扩散和复合所引起的额外电流。这部分额外电流与 $\bar \beta$ 成正比。
 
 $$\overline \beta 
 = \frac {I_\mathrm{CN}} {I_\mathrm B ^\prime}
@@ -331,18 +331,15 @@ depletion type
 
 ### $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的关系
 
-对$\overline \beta$表达式化简，可以得到：
+对$\overline \beta$表达式化简，可以得到（1）式：
+
+$$I_\mathrm C = \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO}$$
 
 
-```math
-I_\mathrm C = \overline \beta (I_\mathrm B + I_\mathrm{CBO}) + I_\mathrm{CBO} \tag{1}
-```
+根据 $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的定义，基极开路， $I_\mathrm B = 0$ 得到（2）式：
 
-根据 $I_\mathrm{CEO}$ 与 $I_\mathrm{CBO}$ 的定义，基极开路， $I_\mathrm B = 0$ ：
+$$I_\mathrm C = \overline \beta I_\mathrm B + I_\mathrm{CEO}$$
 
-```math
-I_\mathrm C = \overline \beta I_\mathrm B + I_\mathrm{CEO} \tag{2}
-```
 
 在 $\overline \beta \gg 1,~ I_\mathrm{CEO} \ll I_\mathrm B$ 时，可以得到结论：
 

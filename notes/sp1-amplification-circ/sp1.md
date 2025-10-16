@@ -18,17 +18,17 @@
 
 对于直流通路，使用压降计算 $R_\mathrm{e}$ ：
 
-$$I_\mathrm{BQ} = \frac{V_\mathrm{BB} - U_\mathrm{BEQ}}{R_\mathrm{b} + (1+\beta)R_\mathrm{e}} \tag{1}$$
+$$I_\mathrm{BQ} = \frac{V_\mathrm{BB} - U_\mathrm{BEQ}}{R_\mathrm{b} + (1+\beta)R_\mathrm{e}}$$
 
 不计发射结电阻， $(1+\beta)R_\mathrm{e}$ 项是由关系 $(1+\beta)I_\mathrm{b} = I_\mathrm{e}$ 得到的等效电阻。
 
 经过放大：
 
-$$I_\mathrm{EQ} = (1+\beta) I_\mathrm{BQ} \tag{2}$$
+$$I_\mathrm{EQ} = (1+\beta) I_\mathrm{BQ}$$
 
 三极管ce之间的压降：
 
-$$U_\mathrm{CEQ} = V_\mathrm{CC} - I_\mathrm{EQ}R_\mathrm{e} \tag{3}$$
+$$U_\mathrm{CEQ} = V_\mathrm{CC} - I_\mathrm{EQ}R_\mathrm{e}$$
 
 经过上述三个表达式，得到直流工作点。
 

@@ -51,16 +51,16 @@ README.md
 
 链接目前有效。
 
-[习题课1-电路基础](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_413348_1)
-[习题课2-半导体与基本放大电路的静态分析](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_416253_1)
-[习题课3](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_418741_1)
-[习题课4](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419291_1)
-[习题课5](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419293_1)
-[习题课6](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_420986_1)
-[习题课7](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422924_1)
-[习题课8](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422937_1)
-[习题课9](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423552_1)
-[习题课10](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423554_1)
+1. [习题课1-电路基础](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_413348_1)
+2. [习题课2-半导体与基本放大电路的静态分析](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_416253_1)
+3. [习题课3](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_418741_1)
+4. [习题课4](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419291_1)
+5. [习题课5](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419293_1)
+6. [习题课6](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_420986_1)
+7. [习题课7](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422924_1)
+8. [习题课8](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422937_1)
+9. [习题课9](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423552_1)
+10. [习题课10](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423554_1)
 
 
 ### 其他好笔记
