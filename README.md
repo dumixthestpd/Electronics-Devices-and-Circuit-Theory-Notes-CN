@@ -1,6 +1,8 @@
 # Electronics-Devices-and-Circuit-Theory-Notes
 
-dumix的模电笔记，适配SUSTech MSE205 工程电路与电子基础 课程
+dumix的模电笔记，适配 SUSTech MSE205 工程电路与电子基础 课程
+
+我是小垃圾，欢迎各路大佬[加入编辑或反馈](#加入编辑)以完善内容。
 
 ## 内容
 
@@ -15,21 +17,32 @@ dumix的模电笔记，适配SUSTech MSE205 工程电路与电子基础 课程
 ### 文件结构
 
 ```
+basic-of-circ-theory
+    pre-knowledge.md - 电路基础知识（建议开始学习前先行巩固）
+
 homework
-    [date].pdf - 作业，有修正
+
+    md-files
+        写作业用的markdown源文件（可忽视）
+
+    raw
+        [date].pdf - 无解答的作业
+
+    solutions
+        [date].pdf - 作业 通常有修正
+    
+
 mat
-    习题解答的pdf，教材由于大小原因无法上传
+    习题解答的pdf，教材由于大小原因无法上传，之后会给出各种资料的链接
 
 notes
     ch1
         ch1n.md - 笔记
-        ch1q.md - 思考题解答（自己写的+AI修正组织的）
+        ch1q.md - 思考题解答（自己写的+AI修正组织的）（已废弃）
     ch2
     ...
     ch10
 
-pre
-    pre-knowledge.md - 电路基础知识（建议开始学习前先行巩固）
 
 waht
 
@@ -43,17 +56,23 @@ README.md
 
 ### 课程资源
 
+~~*“通常而言，作业和习题课比课堂好使”*~~
+
+#### PPT
 目前尚无，之后会将PPT等资料上传到百度网盘
+
+#### 作业-2025Fall
+将会逐步上传[有](homework/)/[无答案的作业](homework/raw/)，答案多为作者手写与对照更正，仅供参考。如有纰漏，可以[联系我](#加入编辑)。
 
 ### 习题课
 
-似乎是2023Fall的习题课录像，地址直达，任何人均可访问，无需登陆bb系统。
+似乎是2023Fall的习题课录像，地址直达且无需登陆bb系统，*为了防止不必要的麻烦，请勿大规模外传。*
 
 链接目前有效。
 
 1. [习题课1-电路基础](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_413348_1)
 2. [习题课2-半导体与基本放大电路的静态分析](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_416253_1)
-3. [习题课3](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_418741_1)
+3. [习题课3-三种基本放大电路](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_418741_1)
 4. [习题课4](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419291_1)
 5. [习题课5](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419293_1)
 6. [习题课6](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_420986_1)
@@ -69,4 +88,4 @@ https://blog.csdn.net/weixin_51130221/article/details/126538175
 
 ## 加入编辑
 
-你可以通过在[Github仓库页面](https://github.com/dumixthestpd/Electronics-Devices-and-Circuit-Theory-Notes-CN/issues)**提出Issues**为本笔记提供建议，或者直接联系我（12413021）
+你可以通过在[Github仓库页面](https://github.com/dumixthestpd/Electronics-Devices-and-Circuit-Theory-Notes-CN/issues)**提出Issues**为本笔记提供建议，或者直接**联系我**（12413021）以获取对本仓库的更高权限。

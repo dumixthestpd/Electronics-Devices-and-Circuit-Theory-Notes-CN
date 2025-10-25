@@ -121,7 +121,14 @@ $u_\mathrm{i} = 0$ 电容=断路，电感=短路
 
 先找静态点 $Q$ ，先找直流通路。
 
+对于一个接有 $R_\mathrm{b},R_\mathrm{c}$ 的基本共射放大电路：
+
 ![figurative explanation](fig/figurative_explanation.png)
+
+两条直线的方程：
+1. 输入回路负载线 $I_\mathrm BQ = \frac{V_\mathrm{bb} - U_\mathrm{BEQ}}{R_b}$
+2. 输出 $I_\mathrm{CQ} = \beta I_\mathrm{BQ}$ 以及 $U_\mathrm{CEQ} = V_\mathrm{CC} - I_\mathrm{CQ}R_\mathrm{c}$
+
 
 #### 非线性失真：截止失真和饱和失真*
 
@@ -216,6 +223,8 @@ $T\uparrow, I_\mathrm C\uparrow, I_\mathrm E\uparrow, u_\mathrm E\uparrow, u_\ma
 ### 2.4.2 Q点稳定的电路
 
 #### 构成与分析
+
+
 
 1. 直流通路：在 $I_\mathrm B$ 可以忽略时使用戴维南定理，进行如下的等效：
 
