@@ -21,7 +21,6 @@ basic-of-circ-theory
     pre-knowledge.md - 电路基础知识（建议开始学习前先行巩固）
 
 homework
-
     md-files
         写作业用的markdown源文件（可忽视）
 
@@ -42,6 +41,9 @@ notes
     ch2
     ...
     ch10
+    
+    cls-ch4
+        notes.md - 我没有预习过的内容，只会对作业和考试中会出现的重点部分进行解释
 
 
 waht
@@ -62,7 +64,7 @@ README.md
 目前尚无，之后会将PPT等资料上传到百度网盘
 
 #### 作业-2025Fall
-将会逐步上传[有](homework/)/[无答案的作业](homework/raw/)，答案多为作者手写与对照更正，仅供参考。如有纰漏，可以[联系我](#加入编辑)。
+将会逐步上传[有](homework/solutions/)/[无答案的作业](homework/raw/)，答案多为作者手写与对照更正，仅供参考。如有纰漏，可以[联系我](#加入编辑)。
 
 ### 习题课
 
@@ -71,15 +73,15 @@ README.md
 链接目前有效。
 
 1. [习题课1-电路基础](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_413348_1)
-2. [习题课2-半导体与基本放大电路的静态分析](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_416253_1)
+2. [习题课2-半导体、基本放大电路的静态分析](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_416253_1)
 3. [习题课3-三种基本放大电路](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_418741_1)
-4. [习题课4](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419291_1)
-5. [习题课5](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419293_1)
-6. [习题课6](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_420986_1)
-7. [习题课7](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422924_1)
-8. [习题课8](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422937_1)
-9. [习题课9](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423552_1)
-10. [习题课10](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423554_1)
+4. [习题课4-MOSFET基本放大电路&复合管](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419291_1)
+5. [习题课5-多级放大电路、差分放大电路、互补输出级](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_419293_1)
+6. [习题课6-电流源电路、集成电路分析、负反馈](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_420986_1)
+7. [习题课7-运算电路](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422924_1)
+8. [习题课8-频率响应](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422937_1)
+9. [习题课9-运放的作用](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423552_1)
+10. [习题课10-逻辑运算和门电路](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423554_1)
 
 
 ### 其他好笔记

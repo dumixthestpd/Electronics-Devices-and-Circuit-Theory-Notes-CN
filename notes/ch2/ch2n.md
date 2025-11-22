@@ -110,8 +110,19 @@ $u_\mathrm{i} = 0$ 电容=断路，电感=短路
 
 #### 交流通路
 
-
 交流单独作用下的通路，直流置零。电容=短路（足够高频，容抗为零）
+
+#### 分析方法
+
+已知 $U_\mathrm{BEQ}$, $\beta$, $V_\mathrm{CC}$
+未知 
+
+1. 分析直流通路
+   1. 找到 $I_\mathrm{BQ}$ （为了找到 $r_\mathrm{be}$ ，即图解法中第一个图）
+   2. 找到 $U_\mathrm{CEQ}$ （找到输出电压所在的位置，图解法中第二个图，后续作用小）
+2. 分析交流通路
+   1. 知晓 $r_\mathrm{be}$
+   2. 分析电压放大倍数，输入/输出电阻。定义：$\dot A_u = \frac{u_\mathrm o}{u_\mathrm i}$，$R_\mathrm i = \frac{\dot U_\mathrm i}{\dot I_\mathrm i}$，$R_\mathrm o = \frac{\dot U_\mathrm o}{\dot I_\mathrm o}$
 
 ### 2.3.2 图解法
 
@@ -126,7 +137,7 @@ $u_\mathrm{i} = 0$ 电容=断路，电感=短路
 ![figurative explanation](fig/figurative_explanation.png)
 
 两条直线的方程：
-1. 输入回路负载线 $I_\mathrm BQ = \frac{V_\mathrm{bb} - U_\mathrm{BEQ}}{R_b}$
+1. 输入回路负载线 $I_\mathrm{BQ} = \frac{V_\mathrm{bb} - U_\mathrm{BEQ}}{R_b}$
 2. 输出 $I_\mathrm{CQ} = \beta I_\mathrm{BQ}$ 以及 $U_\mathrm{CEQ} = V_\mathrm{CC} - I_\mathrm{CQ}R_\mathrm{c}$
 
 
@@ -140,7 +151,7 @@ $u_\mathrm{i} = 0$ 电容=断路，电感=短路
 #### 直流模型和静态工作点
 
 1. $Q$ 点，静态工作点。
-2. $r_\mathrm{be} \approx r_\mathrm{bb'} + (1+\beta)\frac{U_\mathrm{T}}{I_\mathrm{EQ}}$
+2. $r_\mathrm{be}$
    $\approx r_\mathrm{bb'} + (1+\beta)\frac{U_\mathrm{T}}{I_\mathrm{EQ}}$
    1. $r_\mathrm{be}$ 静态工作点，交流通路的 $\frac{\Delta u_\mathrm{be}}{\Delta i_\mathrm b}$
    2. $r_\mathrm{bb'}$ 基区体电阻，基极端子（b）到晶体管内部有效基区（b'）的体电阻。$100 \sim 300 \Omega$。
@@ -241,6 +252,11 @@ $T\uparrow, I_\mathrm C\uparrow, I_\mathrm E\uparrow, u_\mathrm E\uparrow, u_\ma
       R_\mathrm i = \frac{\dot U_\mathrm i}{\dot I_\mathrm i} = R_\mathrm{b1}\parallel R_\mathrm{b2} \parallel \left[ r_\mathrm{be} + (1+\beta) R_\mathrm e \right]\\
       R_\mathrm{o} = R_\mathrm{e}
    \end{cases}$$
+
+
+## 2.x 复合管
+
+只要能确定电流的方向是正确的即可。
 
 # 推导过程
 

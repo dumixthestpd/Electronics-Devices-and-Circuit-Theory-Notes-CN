@@ -20,8 +20,8 @@
 
 $$I_\mathrm{BQ} = \frac{V_\mathrm{BB} - U_\mathrm{BEQ}}{R_\mathrm{b} + (1+\beta)R_\mathrm{e}}$$
 
-不计发射结电阻， $(1+\beta)R_\mathrm{e}$ 项是由关系 $(1+\beta)I_\mathrm{b} = I_\mathrm{e}$ 得到的等效电阻。
 
+不计发射结电阻， $(1+\beta)R_\mathrm{e}$ 项是由关系 $(1+\beta)I_\mathrm{b} = I_\mathrm{e}$ 得到的等效电阻。
 经过放大：
 
 $$I_\mathrm{EQ} = (1+\beta) I_\mathrm{BQ}$$
