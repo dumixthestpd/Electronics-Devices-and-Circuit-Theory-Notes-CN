@@ -92,7 +92,7 @@ PPT上可能会有下标之类的错误。
 6. [习题课6-电流源电路、集成电路分析、负反馈](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_420986_1)
 7. [习题课7-运算电路](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422924_1)
 8. [习题课8-频率响应](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_422937_1)
-9. [习题课9-运放的作用](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423552_1)
+9. [习题课9-运放的应用：滤波、电压比较器、非正弦波的产生](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423552_1)
 10. [习题课10-逻辑运算和门电路](https://bb.sustech.edu.cn/webapps/tx-vod-BBLEARN/video/player?contentPk1=_423554_1)
 
 

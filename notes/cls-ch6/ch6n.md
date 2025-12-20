@@ -50,7 +50,6 @@
 全部反馈到反相输入端，电压串联负反馈，反馈系数为1。输入电阻 $\infty$， 输出电阻为0
 
 ### 6.1.3 加减运算电路
-
 #### 反相求和
 
 ![](fig/fanxiangqiuhe.png)
@@ -69,6 +68,55 @@
 
 ![](fig/tongxiangqiuhe.png)
 
+### 6.1.4 积分微分
+#### 积分
 
+![](fig/integral.png)
+
+1. 虚短虚断，$i_R = i_C$
+2. $u_O = -u_C = - \frac{1}{C}\int i_C \mathrm dt = - \frac{1}{RC}\int u_I \mathrm dt=$
+3. $u_O=- \frac{1}{C}\int_{t_1}^{t_2} i_C \mathrm dt + u_O(t_1)$
 
 ## 别的运算不讲
+
+## 6.3 有源滤波电路
+
+### 6.3.1 基础知识
+
+#### 分类
+
+1. 低通 LPF low pass
+2. 高通 HPF high pass
+3. 带通 BPF band pass
+4. 带阻 BEF band elimination
+5. 全通 APF all pass
+
+![](fig/filters.png)
+
+#### 实际幅频特性
+
+![](fig/filter-actual.png)
+
+1. 通带 $|\dot A_u|>0.707$
+2. 过渡带 $|\dot A_u| \in (0, 0.707)$
+3. 阻带 $|\dot A_u| \to 0$
+
+分析LPF HPF BPF BEF就是算 $\dot A_{up}, f_p$ 和过渡带斜率
+
+#### 无源（低通）滤波电路
+
+
+![](fig/lc-no-source.png)
+
+用 $\dot X_C = \frac{1}{j\omega C}$ 直接计算：
+
+$\dot A_u = \frac{\dot A_{up}}{1+j\frac{f}{f'_p}}$, $f'_p = \frac{1}{2\pi(R\parallel R_L)C}$
+
+$f'_p$ 是有负载时的截止频率，$f_p$ 是空载时的
+
+#### 有源滤波电路
+
+使得负载不影响滤波特性，加电压跟随器。
+
+![](fig/lc-source.png)
+
