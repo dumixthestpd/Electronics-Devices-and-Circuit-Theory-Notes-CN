@@ -58,7 +58,6 @@ README.md
 ```
 
 ## 友情链接
-
 ### 课程资源
 
 ~~*“通常而言，作业和习题课比课堂好使”*~~
@@ -100,6 +99,14 @@ PPT上可能会有下标之类的错误。
 
 https://blog.csdn.net/weixin_51130221/article/details/126538175
 
+### 更多链接
+
+[来自材料系课程资料 MSE205-工程电路和电子基础-2021秋-何祝兵](https://github.com/fiddleyowl/SUSTech-MSE-Course-Materials/tree/main/MSE205-%E5%B7%A5%E7%A8%8B%E7%94%B5%E8%B7%AF%E5%92%8C%E7%94%B5%E5%AD%90%E5%9F%BA%E7%A1%80-2021%E7%A7%8B-%E4%BD%95%E7%A5%9D%E5%85%B5)
+
+[材料系课程资料](https://github.com/fiddleyowl/SUSTech-MSE-Course-Materials/tree/main)
+
 ## 加入编辑
 
 你可以通过在[Github仓库页面](https://github.com/dumixthestpd/Electronics-Devices-and-Circuit-Theory-Notes-CN/issues)**提出Issues**为本笔记提供建议，或者直接**联系我**（12413021）以获取对本仓库的更高权限。
+
+20251220 注：靠，应当注意，github的markdown公式识别要求 `$` 的前面是空格，后面是什么无所谓。

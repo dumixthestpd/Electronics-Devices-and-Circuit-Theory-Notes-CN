@@ -57,7 +57,7 @@ $\tau=RC$
 2. $r_{b'e}$ 的分压
 3. 右侧输出
 
-因此空载中频放大倍数：$\dot A_{usm}=\frac{\dot U_i}{\dot U_s}\frac{\dot U_{b'e}}{\dot U_i}\frac{\dot U_o}{\dot U_{b'e}}=\frac{R_b}{R_s+R_b}\frac{r_{b'e}}{r_{b'e}+r_{bb'}}(-g_mR_c)$
+因此空载中频放大倍数： $\dot A_{usm}=\frac{\dot U_i}{\dot U_s}\frac{\dot U_{b'e}}{\dot U_i}\frac{\dot U_o}{\dot U_{b'e}}=\frac{R_b}{R_s+R_b}\frac{r_{b'e}}{r_{b'e}+r_{bb'}}(-g_mR_c)$
 
 #### 低频
 
@@ -79,7 +79,7 @@ $f_H$ 为上限频率，这一电路中的大小为 $f_H=\frac{1}{2\pi RC_\pi'}=
 
 #### 总结：全频域
 
-全频域即中频乘上高频和低频的两个系数：$\dot A_u = \dot A_{usm} \dot A_{ufl} \dot A_{ufh} = \frac{\dot A_{usm}}{(1+\frac{f_L}{jf})(1+\frac{jf}{f_H})}$
+全频域即中频乘上高频和低频的两个系数： $\dot A_u = \dot A_{usm} \dot A_{ufl} \dot A_{ufh} = \frac{\dot A_{usm}}{(1+\frac{f_L}{jf})(1+\frac{jf}{f_H})}$
 
 #### 波特图
 
@@ -246,10 +246,10 @@ https://www.bilibili.com/video/BV1aT4y1T7Dd
 #### 计算放大系数
 
 
-1. 电压串联：$\dot A_{uuf} = \frac{1}{\dot F_{uu}}$
-2. 电流串联：$\dot A_{iuf} = \frac{1}{\dot F_{ui}} \rightarrow A_{uf}=\frac{1}{F_{ui}}R_L$
-3. 电压并联：$\dot A_{uif} = \frac{1}{\dot F_{iu}} \rightarrow \dot A_{usf}=\frac{1}{\dot F_{iu}}\frac{1}{R_s}$
-4. 电流并联：$\dot A_{iif} = \frac{1}{\dot F_{ii}} \rightarrow \dot A_{usf}=\frac{1}{\dot F_{ii}}\frac{R_L}{R_s}$
+1. 电压串联： $\dot A_{uuf} = \frac{1}{\dot F_{uu}}$
+2. 电流串联： $\dot A_{iuf} = \frac{1}{\dot F_{ui}} \rightarrow A_{uf}=\frac{1}{F_{ui}}R_L$
+3. 电压并联： $\dot A_{uif} = \frac{1}{\dot F_{iu}} \rightarrow \dot A_{usf}=\frac{1}{\dot F_{iu}}\frac{1}{R_s}$
+4. 电流并联： $\dot A_{iif} = \frac{1}{\dot F_{ii}} \rightarrow \dot A_{usf}=\frac{1}{\dot F_{ii}}\frac{R_L}{R_s}$
 
 但是更常用的方法还是直接 $\frac{X_o}{X_i'}$
 
