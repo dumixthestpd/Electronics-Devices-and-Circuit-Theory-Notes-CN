@@ -14,10 +14,12 @@
 
 ### x.1.1 基本运算
 
+```
 “与” 运算（AND &）：当X和Y都为真时，X & Y也为真；其他情况，X & Y 均为假。
 “或” 运算 （OR |）: 当X和Y都为假时，X | Y也为假;其他情况，X | Y 均为真。
 “非” 运算 （NOT ~）:当X为真时，NOT X 为假；当X为假时，~ X 为真。
 “异或”运算 （XOR ^）:当X和Y都为真或都为假时，X ^ Y 为假；否则，X ^ Y 为真。
+```
 
 
 #### 或 OR | 逻辑加
@@ -161,23 +163,23 @@ AB真假**不同**，则Y真，否则（AB真假相同）Y假
 $$\begin{cases}
 ~
 \begin{cases}
-   V_A=0 & \text{\(T_1\) 导通，\(T_2\) 截止} \\
-   V_B=0 & \text{\(T_3\) 导通，\(T_4\) 截止} \\
+   V_A=0 & T_1\text{ 导通，} T_2 \text{ 截止}\\
+   V_B=0 & T_3\text{ 导通，} T_4 \text{ 截止}\\
 \end{cases} \Rightarrow Y=1 \text{（因为13都导通）}\\
 ~
 \begin{cases}
-   V_A=1 & \text{\(T_1\) 截止，\(T_2\) 导通} \\
-   V_B=0 & \text{\(T_3\) 导通，\(T_4\) 截止} \\
+   V_A=1 & T_1\text{ 截止，} T_2 \text{ 导通}\\
+   V_B=0 & T_3\text{ 导通，} T_4 \text{ 截止}\\
 \end{cases} \Rightarrow Y=1 \text{（因为3导通）}\\
 ~
 \begin{cases}
-   V_A=0 & \text{\(T_1\) 导通，\(T_2\) 截止} \\
-   V_B=1 & \text{\(T_3\) 截止，\(T_4\) 导通} \\
+   V_A=0 & T_1\text{ 导通，} T_2 \text{ 截止}\\
+   V_B=1 & T_3\text{ 截止，} T_4 \text{ 导通}\\
 \end{cases} \Rightarrow Y=1 \text{（因为1导通）}\\
 ~
 \begin{cases}
-   V_A=1 & \text{\(T_1\) 截止，\(T_2\) 导通} \\
-   V_B=1 & \text{\(T_3\) 截止，\(T_4\) 导通} \\
+   V_A=1 & T_1\text{ 截止，} T_2 \text{ 导通}\\
+   V_B=1 & T_3\text{ 截止，} T_4 \text{ 导通}\\
 \end{cases} \Rightarrow Y=0 \\
 \text{（因为13都截止，24导通接地）}
 ~   

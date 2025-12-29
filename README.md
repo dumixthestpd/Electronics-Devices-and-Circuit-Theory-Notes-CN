@@ -32,6 +32,9 @@ homework
 
     solutions
         [date].pdf - 作业 大多没更正，只是参考
+
+    provided-solutions
+        TA给的答案
     
 
 mat
@@ -41,7 +44,7 @@ notes
     模电内容
     ch1
         ch1n.md - 笔记
-        ch1q.md - 思考题解答（自己写的+AI修正组织的）（已废弃）
+        ch1q.md - 思考题解答（自编+AI组织）（已废弃）
     ch2
     ...
     ch10
@@ -108,7 +111,7 @@ https://blog.csdn.net/weixin_51130221/article/details/126538175
 
 ### 更多链接
 
-[来自材料系课程资料 MSE205-工程电路和电子基础-2021秋-何祝兵](https://github.com/fiddleyowl/SUSTech-MSE-Course-Materials/tree/main/MSE205-%E5%B7%A5%E7%A8%8B%E7%94%B5%E8%B7%AF%E5%92%8C%E7%94%B5%E5%AD%90%E5%9F%BA%E7%A1%80-2021%E7%A7%8B-%E4%BD%95%E7%A5%9D%E5%85%B5)
+[来自材料系课程资料=>MSE205-工程电路和电子基础-2021秋-何祝兵](https://github.com/fiddleyowl/SUSTech-MSE-Course-Materials/tree/main/MSE205-%E5%B7%A5%E7%A8%8B%E7%94%B5%E8%B7%AF%E5%92%8C%E7%94%B5%E5%AD%90%E5%9F%BA%E7%A1%80-2021%E7%A7%8B-%E4%BD%95%E7%A5%9D%E5%85%B5)
 
 [材料系课程资料](https://github.com/fiddleyowl/SUSTech-MSE-Course-Materials/tree/main)
 
