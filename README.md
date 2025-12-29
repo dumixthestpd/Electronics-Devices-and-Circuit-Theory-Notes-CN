@@ -20,6 +20,9 @@ dumix的模电笔记，适配 SUSTech MSE205 工程电路与电子基础 课程
 basic-of-circ-theory
     pre-knowledge.md - 电路基础知识（建议开始学习前先行巩固）
 
+digital-circ
+    数电内容（最后一个部分）
+
 homework
     md-files
         写作业用的markdown源文件（可忽视）
@@ -28,13 +31,14 @@ homework
         [date].pdf - 无解答的作业
 
     solutions
-        [date].pdf - 作业 通常有修正
+        [date].pdf - 作业 大多没更正，只是参考
     
 
 mat
     习题解答的pdf，教材由于大小原因无法上传，之后会给出各种资料的链接
 
 notes
+    模电内容
     ch1
         ch1n.md - 笔记
         ch1q.md - 思考题解答（自己写的+AI修正组织的）（已废弃）
@@ -48,6 +52,9 @@ notes
     review-mid
         common-sence.md - 考试速通
         review.md - 老师所言重点/考试实际内容
+
+    review-fin
+        common-sence.md - 考试速通
 
 waht
 
